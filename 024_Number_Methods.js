@@ -13,7 +13,7 @@ Number Methods
 
 console.log((100).toString()); // output 100 is a string
 console.log((100).toString()); // tow .. b.c 100.1  flooat dont need flooat i need strting number
-console.log((100.5555).toFixed(2)); // return tow nubmer befor .5555 & Fixed return string
+console.log((100.5555).toFixed(2)); // 100.56 return tow nubmer befor .5555 & Fixed return string
 
 console.log(Number("100 Baraa")); //Output NaN
 console.log(+"100 Baraa"); //Output NaN
