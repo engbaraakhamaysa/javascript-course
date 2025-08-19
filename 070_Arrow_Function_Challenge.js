@@ -14,6 +14,7 @@ console.log(namess("Baraa", "Ail", "Ahmed", "Osama"));
 //Q2: use arry myNumbers = [20, 50, 10, 60] dont chinging in on line ruslt is 80
 
 let myNumbers = [20, 50, 10, 60];
+//one + two + nums . shift ( )
 let calc = (one, two, ...nums) => one + two + nums[0];
 console.log(calc(10, myNumbers[1], myNumbers[0]));
 
