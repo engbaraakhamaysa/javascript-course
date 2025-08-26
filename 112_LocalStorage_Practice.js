@@ -1,8 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+let lis = document.querySelectorAll("ul li");
+let exp = document.querySelector(".experiment");
+
+if (window.localStorage.getItem("color")) {
+  //if there is color in localstorage.
+
+  //1-Add ColOr To Div
+  exp.style.backgroundColor = window.localStorage.getItem("color");
+
+  //2-Remove Active Class From AllList
+  lis.forEach((li) => {
+    li.classList.remove("active");
+  });
+
+  //3-Add Acive class to current color
+  document
+    .querySelector(`[data-color="${window.localStorage.getItem("color")}"]`)
+    .classList.add("active");
+}
+
+lis.forEach((li) => {
+  //in click the color
+  li.addEventListener("click", (e) => {
+    //remov for all li acrive
+    lis.forEach((li) => li.classList.remove("active"));
+    //add active to li is clicked
+    e.currentTarget.classList.add("active");
+    //save the color in the localstorage.
+    window.localStorage.setItem("color", e.currentTarget.dataset.color);
+    //set color to div
+    exp.style.backgroundColor = e.currentTarget.dataset.color;
+  });
+});
+
+//html & Css
+/*
+
     <title>Document</title>
     <style>
       body {
@@ -65,4 +97,5 @@
     <div class="experiment"></div>
     <script src="112_LocalStorage_Practice.js"></script>
   </body>
-</html>
+
+*/
