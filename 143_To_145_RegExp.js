@@ -21,3 +21,13 @@ document.getElementById("rigister").onsubmit = function () {
   }
   return true;
 };
+
+/*
+  <body>
+    <form id="rigister" action="" method="get">
+      <input type="text" id="phone" name="The phone" maxlength="15" />
+      <input type="submit" value="Register" />
+    </form>
+    <script src="143_To_145_RegExp.js"></script>
+  </body>
+ */
