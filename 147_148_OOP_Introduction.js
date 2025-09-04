@@ -1,3 +1,4 @@
+//Function Constructor
 function User(id, username, salary) {
   this.i = id;
   this.u = username;
@@ -10,7 +11,7 @@ let userTwo = new User(101, "Ahmed", 4000);
 console.log(userOne.i, userOne.u, userOne.s);
 console.log(userTwo.i, userTwo.u, userTwo.s);
 
-//dont user this
+//Dont use this Obj to creat new user
 const userOne1 = {
   id: 100,
   name: "baraa",
