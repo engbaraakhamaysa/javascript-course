@@ -19,6 +19,18 @@ Promis Intro And Syntax
  - Then
  --- Takes 2 Optional Arguments [Callback For Success Or Failure]
 */
+// const myPromise = new Promise((resolveFunction, rejectFuction) => {
+//   let connect = true; // Try False
+//   if (connect) {
+//     resolveFunction("Connecton Established");
+//   } else {
+//     rejectFuction(Error("Connection Failed"));
+//   }
+// }).then(
+//   (resolveValue) => console.log(`Good ${resolveValue}`),
+//   (rejectValue) => console.log(`Bad ${rejectValue}`)
+// );
+
 const myPromise = new Promise((resolveFunction, rejectFuction) => {
   let connect = true; // Try False
   if (connect) {
@@ -26,13 +38,14 @@ const myPromise = new Promise((resolveFunction, rejectFuction) => {
   } else {
     rejectFuction(Error("Connection Failed"));
   }
-}).then(
-  (resolveValue) => console.log(`Good ${resolveValue}`),
-  (rejectValue) => console.log(`Bad ${rejectValue}`)
-);
+});
 
 console.log(myPromise);
 
+let resolver = (resolveValue) => console.log(`Good ${resolveValue}`);
+let rejecter = (rejectValue) => console.log(`Bad ${rejectValue}`);
+
+myPromise.then(resolver, rejecter);
 myPromise.then(
   (resolveValue) => console.log(`Good ${resolveValue}`),
   (rejectValue) => console.log(`Bad ${rejectValue}`)
