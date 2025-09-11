@@ -15,3 +15,4 @@ Finally => Promise Successfull Or Failed Finally Do Somethiing
 
 */
 const myPromise = new Promise((resolveFunction, rejectFunction) => {});
+myPromise.then();
