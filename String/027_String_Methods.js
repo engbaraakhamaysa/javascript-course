@@ -23,7 +23,7 @@ console.log(theName.charAt(6)); //null staring
 console.log(theName.length);
 
 //tirm()
-var theName = "  Baraa  ";
+var theName = "  Baraaa  ";
 console.log(theName.trim()); //remov spce
 
 //to upper case() & to lower case()
