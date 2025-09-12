@@ -26,5 +26,5 @@ console.log(userOne.id, userOne.name);
 console.log(userOne.getSalary());
 //console.log(User.#e); //#e => For each object individually.static #something => For the class itself, but still private.
 
-let userAdmin = new Admin(100, "BaraaAdmin", 1000, 1);
+let userAdmin = new Admin(100, "Baraa Admin", 1000, 1);
 console.log(userAdmin.id, userAdmin.name, userAdmin.getSalary(), userAdmin.a);

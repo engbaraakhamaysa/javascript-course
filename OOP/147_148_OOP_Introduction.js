@@ -13,7 +13,7 @@ console.log(userTwo.i, userTwo.u, userTwo.s);
 
 //Dont use this Obj to creat new user
 const userOne1 = {
-  id: 100,
+  id: 101,
   name: "baraa",
   salary: 1000,
 };
